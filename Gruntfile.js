@@ -364,8 +364,8 @@ module.exports = function (grunt) {
     'clean:server',
     'jekyll:check',
     'sass:server',
-    'jshint:all',
-    'csslint:check'
+    //'jshint:all',
+    //'csslint:check'
   ]);
 
   grunt.registerTask('build', [
@@ -374,10 +374,10 @@ module.exports = function (grunt) {
     'jekyll:dist',
     'concurrent:dist',
     'useminPrepare',
-    'concat',
+    //'concat',
     'autoprefixer:dist',
     'cssmin',
-    'uglify',
+    //'uglify',
     'imagemin',
     'svgmin',
     'filerev',

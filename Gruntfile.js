@@ -291,7 +291,7 @@ module.exports = function (grunt) {
     buildcontrol: {
       dist: {
         options: {
-          remote: 'git@github.com:YuriGizra.git',
+          remote: 'git@github.com:YuriGizra/failer.info.git',
           branch: 'gh-pages',
           commit: true,
           push: true

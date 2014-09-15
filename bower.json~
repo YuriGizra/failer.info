@@ -1,8 +1,0 @@
-{
-  "name": "failer",
-  "version": "0.0.0",
-  "dependencies": {
-    "jquery": "~2.1.1",
-    "bootstrap-sass-official": "~3.2.0+2"
-  }
-}

@@ -5,3 +5,10 @@
 
 future: false
 show_drafts: false
+
+url: http://yurigizra.github.io/failer.info/
+
+github:
+highlighter: pygments
+
+sourse:

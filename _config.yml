@@ -1,4 +1,4 @@
-# Jekyll configuration precedence:
+о# Jekyll configuration precedence:
 # 1. Gruntfile task
 # 2. config.build.yml
 # 3. config.yml
@@ -9,7 +9,7 @@ author:
   name: Yuri Failer
   email: yuri.failer@gmail.com
 url: http://localhost:9000
-
+baseurl:  /failer.info
 # Grunt handles images and assets.
 exclude: ['img', 'css', 'js', 'fonts',
           '**.png', '**.jpg', '**.jpeg', '**.gif', '**.webp', '**.svg', '**.ico']

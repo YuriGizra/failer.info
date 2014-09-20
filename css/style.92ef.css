@@ -42,6 +42,7 @@ p.lead {
 a {
     color: #28c3ab;
     -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
 }
 
@@ -100,6 +101,7 @@ a:focus {
 
 .navbar-custom.top-nav-collapse ul.nav li a {
 	    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
 	color: #fff;
 }
@@ -131,6 +133,7 @@ a:focus {
 
 .navbar-custom .nav li a {
     -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out;
 }
 
@@ -183,68 +186,21 @@ a:focus {
     width: 60px;
 }
 
-@-webkit-keyframes boxSpin{
-  0%{
-    -webkit-transform: translate(-10px, 0px);
-    transform: translate(-10px, 0px);
-  }
-  25%{
-    -webkit-transform: translate(10px, 10px);
-    transform: translate(10px, 10px);
-  }
-  50%{
-    -webkit-transform: translate(10px, -10px);
-    transform: translate(10px, -10px);
-  }
-  75%{
-    -webkit-transform: translate(-10px, -10px);
-    transform: translate(-10px, -10px);
-  }
-  100%{
-    -webkit-transform: translate(-10px, 10px);
-    transform: translate(-10px, 10px);
-  }
-}
-
 @keyframes boxSpin{
   0%{
-    -webkit-transform: translate(-10px, 0px);
     transform: translate(-10px, 0px);
   }
   25%{
-    -webkit-transform: translate(10px, 10px);
     transform: translate(10px, 10px);
   }
   50%{
-    -webkit-transform: translate(10px, -10px);
     transform: translate(10px, -10px);
   }
   75%{
-    -webkit-transform: translate(-10px, -10px);
     transform: translate(-10px, -10px);
   }
   100%{
-    -webkit-transform: translate(-10px, 10px);
     transform: translate(-10px, 10px);
-  }
-}
-
-
-@-webkit-keyframes shadowSpin{
-  0%{
-    box-shadow: 10px -10px #39CCCC, -10px 10px #FFDC00;
-  }
-  25%{
-    box-shadow: 10px 10px #39CCCC, -10px -10px #FFDC00;
-  }
-  50%{
-    box-shadow: -10px 10px #39CCCC, 10px -10px #FFDC00;
-  }
-  75%{
-    box-shadow: -10px -10px #39CCCC, 10px 10px #FFDC00;
-  }
-  100%{
-    box-shadow: 10px -10px #39CCCC, -10px 10px #FFDC00;
   }
 }
 
@@ -281,7 +237,6 @@ a:focus {
   border-radius: 0px;
   border: 5px solid #FF4136;
   box-shadow: 10px 0px #39CCCC, 10px 0px #01FF70;
-  -webkit-animation: shadowSpin 1s ease-in-out infinite;
   animation: shadowSpin 1s ease-in-out infinite;
 }
 
@@ -490,10 +445,12 @@ form#contact-form .form-group label {
 form#contact-form input,form#contact-form select,form#contact-form textarea {
 	border-radius: 0;
 	border: 1px solid #eee;
+  -webkit-box-shadow: none;
           box-shadow:  none;
 }
 
 form#contact-form input:focus,form#contact-form select:focus,form#contact-form textarea:focus {
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
           box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
 }
 .input-group-addon {
@@ -620,6 +577,7 @@ Parallax
     font-family: Montserrat,sans-serif;
     font-weight: 400;
     -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 }
 
@@ -635,6 +593,7 @@ Parallax
     color: #fff;
     background: 0 0;
     -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out;
 }
 
@@ -666,6 +625,7 @@ Parallax
 .page-scroll .btn-circle i.animated {
     -webkit-transition-property: -webkit-transform;
     -webkit-transition-duration: 1s;
+    -moz-transition-property: -moz-transform;
     -moz-transition-duration: 1s;
 }
 
@@ -693,6 +653,23 @@ Parallax
 
     100% {
         -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@-moz-keyframes pulse {    
+    0 {
+        -moz-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -moz-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    100% {
+        -moz-transform: scale(1);
         transform: scale(1);
     }
 }
@@ -746,6 +723,7 @@ Parallax
         letter-spacing: 1px;
         background: 0 0;
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
     }
 

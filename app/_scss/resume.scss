@@ -1,1 +1,21 @@
 @import 'bootstrap-sass-official/assets/stylesheets/bootstrap';
+
+// Define basic colors.
+$cyan: #04918B;
+$dirtyellow: #C7C123;
+
+#header {
+  background-color: $cyan;
+  height: 60px;
+  padding: 0 45px;
+
+  .logo {
+    font-size: 35px;
+    color: white;
+    margin-top: 2px;
+
+    span {
+      color: $dirtyellow;
+    }
+  }
+}

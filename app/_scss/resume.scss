@@ -7,7 +7,6 @@ $dirtyellow: #C7C123;
 #header {
   background-color: $cyan;
   height: 60px;
-  padding: 0 45px;
 
   .logo {
     font-size: 35px;
@@ -18,4 +17,40 @@ $dirtyellow: #C7C123;
       color: $dirtyellow;
     }
   }
+
+  #top-menu ul > li > a {
+    height: 60px;
+    color: #ffffff;
+    background-color: #04918B;
+    font-weight: bold;
+    line-height: 30px;
+
+    &:hover {
+      background-color: #035E5A;
+    }
+  }
 }
+
+#home {
+  padding:150px 0px;
+  background: #575847 url("../img/home.jpg") no-repeat center top;
+  min-height: 400px;
+  color: #ffffff;
+  font-weight: bold;
+
+  h1 {
+    font-size: 70px;
+    font-family: fantasy;
+  }
+}
+
+#profile {
+
+  h2 {
+    font-size: 50px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #04918B;
+  }
+}
+
